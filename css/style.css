@@ -1,0 +1,717 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    /* height: 650px; */
+    background-image: url(../img/homebg1.jpeg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-attachment: fixed;
+    z-index: 9999 !important;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+.navbar{
+    padding: 15px 0px;
+    /* background-color: transparent !important; */
+    background-color: transparent;
+    border-bottom: none !important;
+    transition: all 0.5s ease;
+}
+.navbar ul li a{
+    color: white;
+    padding-left: 8px !important;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.4s ease !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white !important;
+}
+.navbar ul li a:hover, .navbar ul li a:focus{
+    display: inline-block;
+    color: white !important;
+    border-bottom: 2px solid white;
+    transition: all 0.4s ease !important;
+}
+.navbar-toggler{
+    border: 2px solid white !important;
+    color: black !important;
+}
+.navbar-toggler:hover{
+    background-color: #2E86C1;
+}
+
+/*=============================================
+               STICKY NAVIGATION STARTS
+  ============================================*/   
+  .secondary{
+      background: black ;
+      transition: all 0.6s ease;
+      opacity: 0.9;
+  }
+  .secondary a.nav-link{
+      color: white !important;
+      border-bottom: 2.5px solid transparent;
+      transition: all .4s ease;
+  }
+  .secondary a.nav-link:hover{
+    color: white !important;
+    border-bottom: 2.5px solid white;
+}
+  /*=============================================
+               STICKY NAVIGATION STARTS
+  ============================================*/   
+.slider-content{
+    
+    position: absolute;
+    justify-content: center;
+    /* top: 50%; */
+    width: 100%;
+     transform: translate(-0%, 20%);
+    
+}
+.photo img{
+    height: 170px;
+    width: 170px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transform: rotate(-2deg);
+    padding-right: 5px;
+    background-color: black;
+}
+.icons a{
+    color: white;
+    font-size:2rem;
+    background-color: black;
+    display:inline-block;
+    border: 2px solid white;
+    width:54px;
+    height:54px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    transition: all 0.5s ease-out;
+    margin-left: 25px;
+
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.icons a:hover{
+    background-color: black;
+    color: white;
+
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+.btn1, .btn2{
+    text-decoration: none;
+    padding: 13px 18px;
+    background-color: transparent;
+    color: white !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    border: 2px solid white !important;
+    font-weight: 600;
+    transition: all 0.4s ease-in;
+    border-top-left-radius: 15px;
+}
+.btn1:hover{
+    background-color: azure;
+    color: black !important;
+    font-weight: 600;
+}
+.btn2:hover{
+     background-color: azure;
+     color: black !important;
+     font-weight: 600;
+}
+
+/* ---------------------links Animation In css------------------- */
+.linkedin {
+	animation-name: backgroundColorPalette;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in; 
+    animation-delay: 1s;
+}
+
+@keyframes backgroundColorPalette {
+	0% {
+		background: black;
+        color: gold;
+	}
+	25% {
+		background: gold;
+        color: black;
+	}
+}
+.github {
+	animation-name: backgroundColorPalette;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in; 
+    animation-delay: 2s;
+	/* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
+}
+
+@keyframes backgroundColorPalette {
+	25% {
+		background: black;
+        color: gold;
+	}
+	50% {
+		background: gold;
+        color: black;
+	}
+}
+
+.insta {
+	animation-name: backgroundColorPalette;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in;
+    animation-delay: 3s; 
+	/* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
+}
+
+@keyframes backgroundColorPalette {
+	50% {
+		background: black;
+        color: gold;
+	}
+	75% {
+		background: gold;
+        color: black;
+	}
+}
+.twitter {
+	animation-name: backgroundColorPalette;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in; 
+    animation-delay: 4s;
+}
+
+@keyframes backgroundColorPalette {
+	75% {
+		background: black;
+        color: gold;
+	}
+	100% {
+		background: gold;
+        color: black;
+	}
+}
+/* ---------------------Button Animation In css------------------- */
+.about p{
+    color: gold;
+}
+.about h1{
+    font-size: 55px;
+    color: #95A5A6;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.text{
+    margin-bottom: -30px;
+}
+.text p{
+    color: #95A5A6;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: -2px;
+    margin-top: -5px;
+}
+#typed, .typed-cursor{
+    margin-top: -8px;
+    color: gold ;
+    font-size: 40px;
+    font-weight: 500;
+}
+.section .heading{
+    text-align: center;
+    /* margin-top: -35px; */
+    margin-left: -18px;
+    
+}
+.about-content h3 {
+	margin-bottom: 30px;
+	text-transform: capitalize;
+}
+.about-content p {
+	margin-bottom: 16px;
+}
+.about-content ul li {
+	margin-top: 8px;
+	font-size: 14px;
+	color: #666;
+    text-decoration: none;
+}
+.about-content ul li span {
+	font-weight: 700;
+	color: #232323;
+}
+.about-content ul li span i {
+	margin-right: 4px;
+}
+.about-content .resume{
+    text-align: center;
+}
+.about-content .resume a{
+    border: 2px solid black;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+/* .hobby{
+    border: 2px solid #5D6D7E;
+    padding: -15px -20px 0px -20px;
+    width: 153px;
+    margin-bottom: 25px;
+} */
+div.about-content{
+    border-right: 2px solid #909497;
+}
+.section-heading h1{
+    text-align: center;
+}
+.featurette {
+    font-size: .8rem;
+    line-height: 1.5;
+    color: #555;
+    text-align: center;
+}
+.featurette-icon {
+    display: block;
+    width: 100%;
+    color: #795548;
+    font-size: 3rem;
+    text-align: center;
+}
+.featurette h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+}
+
+/*---------------------------------------
+    Projects Section css starts
+----------------------------------------*/
+.service-image img{
+    background-size: contain;
+    width: 100%;
+    height: auto;
+    margin-right: 5px;
+}
+.service-wrap{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 5.5);
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 12px;
+}
+.service-wrap p{
+    margin-bottom: 0 !important;
+}
+    .content{
+    position: relative;
+    height: 37.5px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+/*
+.content:hover{
+    height: 80px;
+} */
+.content-hidden{
+    position: relative;
+    height: 233.5px;
+    transition: height 0.5s;
+    overflow: hidden;
+    transition: all 0.5s ease !important;
+}
+.content-hidden:hover{
+    height: 273px;
+}
+
+/*======================================================
+              CONTACT FORM STARTS
+=======================================================*/    
+
+.contact-page-sec {
+            padding: 60px 0;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+.contact-info {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+      margin-bottom: 10px;
+}
+.contact-info-icon {
+margin-bottom: 15px;
+}
+.contact-info-item {
+  background: #071c34;
+  padding: 30px 0px;
+}
+.contact-page-sec .contact-page-form h2 {
+  color: #071c34;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 700;
+}
+.contact-page-form .col-md-6.col-sm-6.col-xs-12 {
+  padding-left: 0;
+}  
+.contact-page-form.contact-form input {
+  margin-bottom: 5px;
+}  
+.contact-page-form.contact-form textarea {
+  height: 110px;
+}
+.contact-page-form.contact-form input[type="submit"] {
+  background: #071c34;
+  width: 150px;
+  border-color: #071c34;
+}
+.contact-info-icon i {
+  font-size: 48px;
+  color: #fda40b;
+}
+.contact-info-text p{margin-bottom:0px;}
+.contact-info-text h2 {
+  color: #fff;
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact-info-text span {
+  color: #999999;
+  font-size: 16px;
+  font-weight: 450;
+  display: inline-block;
+  width: 100%;
+}
+
+.contact-page-form input {
+  background: #AED6F1  none repeat scroll 0 0;
+  border: 1px solid #f9f9f9;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.contact-page-form .message-input {
+display: inline-block;
+width: 100%;
+padding-left: 0;
+}
+.single-input-field textarea {
+  background: #AED6F1  none repeat scroll 0 0;
+  border: 1px solid #f9f9f9;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+.single-input-fieldsbtn input[type="submit"] {
+  background: #fda40b none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  padding: 10px 0;
+  text-transform: capitalize;
+  width: 150px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.single-input-fieldsbtn input[type="submit"]:hover{background:#071c34;transition: all 0.4s ease-in-out 0s;border-color:#071c34}
+.single-input-field  h4 {
+  color: #464646;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.contact-page-form {
+  display: inline-block;
+  width: 60%;
+  margin-top: 30px;
+}
+
+.contact-page-map {
+  margin-top: 36px;
+}
+.contact-page-form form {
+    padding: 20px;
+}
+
+/*=======================================
+            card animation starts
+=======================================*/
+.contact-info-item{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 25px 25px;
+    position: relative;
+    transition: all 0.8s ease;
+    z-index: 9;
+    margin-top: 20px;
+}
+.contact-info-item::before, .contact-info-item::after{
+    content: "";
+    height: 300%;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 120%;
+    z-index: -9;
+    transition: all 0.8s;
+    opacity: 0;
+    background-color: #fda40b;
+}
+.contact-info-item::before{
+    top: -27%;
+    left: 100%;
+}
+.contact-info-item:hover:before{
+   left: -27px;
+   opacity: 1;
+
+}
+.contact-info-item::after{
+    right: 100%;
+    bottom: -37px;
+}
+.contact-info-item:hover:after{
+    right: -27px;
+    opacity: 1;
+ }
+.contact-info-item:hover{
+    color: #071c34;
+}
+.contact-info-item:h2{
+    color: #071c34;
+}
+.contact-info-item:hover h2{
+    color: #071c34;
+}
+.contact-info-item:hover h2{
+    color: #071c34;
+}
+.contact-info-item:i{
+    color: #071c34;
+}
+.contact-info-item:hover i{
+    color: #071c34;
+}
+.contact-info-item:hover i{
+    color: #071c34;
+}
+.contact-info-item:span{
+    color: #071c34;
+}
+.contact-info-item:hover span{
+    color: #071c34;
+}
+.contact-info-item:hover span{
+    color: #071c34;
+}
+/*========================================
+           Footer CSS code
+=========================================*/
+.footer{
+    background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url(../img/blackwood.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    padding-top: 145px;
+    padding-bottom: 60px;
+    background-attachment: fixed;
+}
+.social-icon a{
+    margin: 0 16px 28px 16px;
+    display: inline-block;
+}
+.footer .fab{
+    font-size: 27px;
+    color: deepskyblue;
+    width: 65px;
+    height: 65px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: white;
+    line-height: 50px;
+    border: 8px solid #34495e;
+    /* text-align: center; */
+    transition: all .7s ease-in;
+}
+.footer .fas{
+    font-size: 27px;
+    color: deepskyblue;
+    width: 65px;
+    height: 65px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: white;
+    line-height: 50px;
+    border: 8px solid #34495e;
+    /* text-align: center; */
+    transition: all .7s ease-in;
+}
+.social-icon a:hover .fas{
+    border: 8px solid white;
+    transform: rotate(360deg);
+}
+.social-icon a:hover .fab{
+    border: 8px solid white;
+    transform: rotate(360deg);
+}
+/*========================================
+     This is project cards
+========================================*/
+
+.grid {
+	padding: 20px 20px 100px 20px;
+	max-width: 1300px;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+}
+
+.grid li {
+	display: inline-block;
+	width: 440px;
+	margin: 0;
+	padding: 20px;
+	text-align: left;
+	position: relative;
+}
+
+.grid figure {
+	margin: 0;
+	position: relative;
+}
+
+.grid figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background: #2c3f52;
+	color: #ed4e6e;
+}
+
+.grid figcaption h3 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.grid figcaption span:before {
+	content: 'by ';
+}
+
+.grid figcaption a {
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	background: #ed4e6e;
+	color: #fff;
+}
+.cs-style-3 figure {
+	overflow: hidden;
+}
+
+.cs-style-3 figure img {
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+
+.no-touch .cs-style-3 figure:hover img,
+.cs-style-3 figure.cs-hover img {
+	-webkit-transform: translateY(-50px);
+	-moz-transform: translateY(-50px);
+	-ms-transform: translateY(-50px);
+	transform: translateY(-50px);
+}
+
+.cs-style-3 figcaption {
+	height: 100px;
+	width: 100%;
+	top: auto;
+	bottom: 0;
+	opacity: 0;
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch .cs-style-3 figure:hover figcaption,
+.cs-style-3 figure.cs-hover figcaption {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
+	transition: transform 0.4s, opacity 0.1s;
+}
+
+.cs-style-3 figcaption a {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}

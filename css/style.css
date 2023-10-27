@@ -98,7 +98,7 @@ header{
     width: 170px;
     border: 2px solid white;
     border-radius: 50%;
-    transform: rotate(-2deg);
+     transform: rotate(0deg);
     padding-right: 5px;
     background-color: black;
 }
